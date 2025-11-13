@@ -25,7 +25,21 @@
 		.read		= SPI_CHIP_READ, /* Fast read (0x0B) supported */
 		.voltage	= {3000, 3600},
 	},
-
+	{
+        .vendor         = "Macronix",
+        .name           = "MX35LF1GE4AB",
+        .bustype        = BUS_SPI,
+        .manufacture_id = MACRONIX_ID,
+        .model_id       = MACRONIX_MX35LF1GE4AB,
+        .total_size     = 1024,
+        .page_size      = 256,
+        .tested         = {.probe = NT, .read = NT, .erase = NA, .write = NA, .wp = NA},
+        .probe          = PROBE_SPI_RDID,
+        .probe_timing   = TIMING_ZERO,
+        .write          = 0, /* MX35LF1GE4AB is a flash chip but I could test only the reading */
+        .read           = SPI_CHIP_READ, /* Fast read (0x0B) supported */
+        .voltage        = {3000, 3600},
+    },
 	{
 		.vendor		= "Macronix",
 		.name		= "MX23L1654",
