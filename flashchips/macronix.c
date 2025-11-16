@@ -31,7 +31,7 @@
         .bustype        = BUS_SPI,
         .manufacture_id = MACRONIX_ID,
         .model_id       = MACRONIX_MX35LF1GE4AB,
-        .total_size     = 1024,
+        .total_size     = 1023,
         .page_size      = 256,
         .tested         = {.probe = NT, .read = NT, .erase = NA, .write = NA, .wp = NA},
         .probe          = PROBE_SPI_RDID,
